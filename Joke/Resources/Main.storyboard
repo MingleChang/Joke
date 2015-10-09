@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uep-FN-i1y">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="apw-Mf-40O">
+            <objects>
+                <navigationController id="uep-FN-i1y" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bq0-Ra-m2f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UmQ-sk-rEw" kind="relationship" relationship="rootViewController" id="VHD-ak-J9O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSD-Ch-hcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330" y="286"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="lAC-BJ-sCx">
+            <objects>
+                <viewController id="UmQ-sk-rEw" customClass="MCHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y90-tg-Dxx"/>
+                        <viewControllerLayoutGuide type="bottom" id="dJ5-h1-PyX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oA8-gU-NjF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-Bx-7Sm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dJ5-h1-PyX" firstAttribute="top" secondItem="NAb-Bx-7Sm" secondAttribute="bottom" id="3ri-x2-SFH"/>
+                            <constraint firstAttribute="trailing" secondItem="NAb-Bx-7Sm" secondAttribute="trailing" id="JXz-no-0f1"/>
+                            <constraint firstItem="NAb-Bx-7Sm" firstAttribute="top" secondItem="oA8-gU-NjF" secondAttribute="top" id="La1-8n-99q"/>
+                            <constraint firstItem="NAb-Bx-7Sm" firstAttribute="leading" secondItem="oA8-gU-NjF" secondAttribute="leading" id="sh2-Pr-RRO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oQb-4F-DyX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEq-wu-rC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="286"/>
+        </scene>
+    </scenes>
+</document>

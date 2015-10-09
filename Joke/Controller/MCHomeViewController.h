@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MCHomeViewController.h
 //  Joke
 //
 //  Created by cjw on 15/10/9.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MCHomeViewController : UIViewController
 
 @end
-
